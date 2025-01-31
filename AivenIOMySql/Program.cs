@@ -1,3 +1,5 @@
+using AivenIOMySql.DAL;
+using Microsoft.EntityFrameworkCore;
 
 namespace AivenIOMySql
 {
@@ -13,6 +15,17 @@ namespace AivenIOMySql
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            #region DB Connection 
+
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<ApplicationDBContext>(options =>
+            {
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            });
+
+            #endregion
+
 
             var app = builder.Build();
 
