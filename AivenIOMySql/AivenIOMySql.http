@@ -1,0 +1,6 @@
+@AivenIOMySql_HostAddress = http://localhost:5233
+
+GET {{AivenIOMySql_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
