@@ -28,10 +28,10 @@ Replace Aiven_Cloud_Host_Name, YOUR_DB, USER_id, and PASSWORD with your actual A
 
 ### Build and Run the Application
 
-BASH
-
+```bash
 dotnet build
 dotnet run
+
 The application will attempt to connect to the Aiven MySQL database using the provided credentials and SSL certificate.
 
 ### Connection String Explanation
