@@ -17,7 +17,7 @@ This repository demonstrates how to connect to a MySQL database hosted on [Aiven
    ```bash
    git clone git clone https://github.com/KI-IAN/AivenIOMySql.git
    cd AivenIOMySql
-   
+   ```
 ### Add Your Aiven MySQL Credentials
 
 Update the appsettings.json file with your Aiven MySQL connection details:
@@ -29,8 +29,9 @@ Replace Aiven_Cloud_Host_Name, YOUR_DB, USER_id, and PASSWORD with your actual A
 ### Build and Run the Application
 
 ```bash
-dotnet build
-dotnet run
+   dotnet build
+   dotnet run
+```
 
 The application will attempt to connect to the Aiven MySQL database using the provided credentials and SSL certificate.
 
