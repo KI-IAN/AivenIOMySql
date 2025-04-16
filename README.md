@@ -15,7 +15,7 @@ This repository demonstrates how to connect to a MySQL database hosted on [Aiven
 1. **Clone the Repository**
 
    ```bash
-   git clone git clone https://github.com/yourusername/AivenIOMySql.git
+   git clone git clone https://github.com/KI-IAN/AivenIOMySql.git
    cd AivenIOMySql
    
 ### Add Your Aiven MySQL Credentials
